@@ -1,0 +1,878 @@
+2026-06-28 20:34:41,077 | INFO | Leyendo archivo: Work Requests-2026-06-28T160106.xlsx
+2026-06-28 20:34:41,462 | INFO | Leyendo archivo: Work Requests-2026-06-28T160247.xlsx
+2026-06-28 20:34:41,626 | INFO | Leyendo archivo: Work Requests-2026-06-28T160410.xlsx
+2026-06-28 20:34:41,753 | INFO | Leyendo archivo: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:34:41,772 | ERROR | Error durante importación
+Traceback (most recent call last):
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\base.py", line 59, in _convert
+    value = expected_type(value)
+            ^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\main.py", line 80, in run_import
+    df = read_excel_files(self.files, self.cfg.sheet_names(), self.logger)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\excel_reader.py", line 26, in read_excel_files
+    excel = pd.ExcelFile(path)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\excel\_base.py", line 1621, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 560, in __init__
+    super().__init__(
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\excel\_base.py", line 554, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 579, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\reader\excel.py", line 348, in load_workbook
+    reader.read()
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\reader\excel.py", line 301, in read
+    apply_stylesheet(self.archive, self.wb)
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\styles\stylesheet.py", line 209, in apply_stylesheet
+    stylesheet = Stylesheet.from_tree(node)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\styles\stylesheet.py", line 105, in from_tree
+    return super().from_tree(node)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\serialisable.py", line 87, in from_tree
+    obj = desc.expected_type.from_tree(el)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\serialisable.py", line 87, in from_tree
+    obj = desc.expected_type.from_tree(el)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\serialisable.py", line 103, in from_tree
+    return cls(**attrib)
+           ^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\styles\cell_style.py", line 111, in __init__
+    self.numFmtId = numFmtId
+    ^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\base.py", line 71, in __set__
+    value = _convert(self.expected_type, value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\base.py", line 61, in _convert
+    raise TypeError('expected ' + str(expected_type))
+TypeError: expected <class 'int'>
+2026-06-28 20:34:56,103 | INFO | Leyendo archivo: Work Requests-2026-06-28T160106.xlsx
+2026-06-28 20:34:56,207 | INFO | Leyendo archivo: Work Requests-2026-06-28T160247.xlsx
+2026-06-28 20:34:56,331 | INFO | Leyendo archivo: Work Requests-2026-06-28T160410.xlsx
+2026-06-28 20:34:56,448 | INFO | Leyendo archivo: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:34:56,452 | ERROR | Error durante importación
+Traceback (most recent call last):
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\base.py", line 59, in _convert
+    value = expected_type(value)
+            ^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\main.py", line 80, in run_import
+    df = read_excel_files(self.files, self.cfg.sheet_names(), self.logger)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\excel_reader.py", line 26, in read_excel_files
+    excel = pd.ExcelFile(path)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\excel\_base.py", line 1621, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 560, in __init__
+    super().__init__(
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\excel\_base.py", line 554, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 579, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\reader\excel.py", line 348, in load_workbook
+    reader.read()
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\reader\excel.py", line 301, in read
+    apply_stylesheet(self.archive, self.wb)
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\styles\stylesheet.py", line 209, in apply_stylesheet
+    stylesheet = Stylesheet.from_tree(node)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\styles\stylesheet.py", line 105, in from_tree
+    return super().from_tree(node)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\serialisable.py", line 87, in from_tree
+    obj = desc.expected_type.from_tree(el)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\serialisable.py", line 87, in from_tree
+    obj = desc.expected_type.from_tree(el)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\serialisable.py", line 103, in from_tree
+    return cls(**attrib)
+           ^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\styles\cell_style.py", line 111, in __init__
+    self.numFmtId = numFmtId
+    ^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\base.py", line 71, in __set__
+    value = _convert(self.expected_type, value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\descriptors\base.py", line 61, in _convert
+    raise TypeError('expected ' + str(expected_type))
+TypeError: expected <class 'int'>
+2026-06-28 20:40:33,372 | INFO | Leyendo archivo: Work Requests-2026-06-28T160106.xlsx
+2026-06-28 20:40:33,711 | INFO | Leyendo archivo: Work Requests-2026-06-28T160247.xlsx
+2026-06-28 20:40:33,817 | INFO | Leyendo archivo: Work Requests-2026-06-28T160410.xlsx
+2026-06-28 20:40:33,929 | INFO | Leyendo archivo: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:40:33,935 | WARNING | Work Requests-2026-06-28T160451.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:33,939 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:40:34,053 | INFO | Leyendo archivo: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:40:34,057 | WARNING | Work Requests-2026-06-28T160749.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:34,061 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:40:34,141 | INFO | Leyendo archivo: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:40:34,145 | WARNING | Work Requests-2026-06-28T160831.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:34,149 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:40:34,231 | INFO | Leyendo archivo: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:40:34,235 | WARNING | Work Requests-2026-06-28T160901.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:34,241 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:40:34,334 | INFO | Leyendo archivo: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:40:34,339 | WARNING | Work Requests-2026-06-28T160927.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:34,345 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:40:34,449 | INFO | Leyendo archivo: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:40:34,453 | WARNING | Work Requests-2026-06-28T161013.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:34,457 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:40:34,545 | INFO | Leyendo archivo: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:40:34,549 | WARNING | Work Requests-2026-06-28T161050.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:34,555 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:40:34,693 | INFO | Leyendo archivo: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:40:34,697 | WARNING | Work Requests-2026-06-28T161135.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:34,704 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:40:34,820 | INFO | Leyendo archivo: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:40:34,824 | WARNING | Work Requests-2026-06-28T161306.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:34,829 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:40:34,937 | INFO | Leyendo archivo: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:40:34,942 | WARNING | Work Requests-2026-06-28T161509.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:34,946 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:40:35,054 | INFO | Leyendo archivo: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:40:35,059 | WARNING | Work Requests-2026-06-28T161546.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:35,063 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:40:35,160 | INFO | Leyendo archivo: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:40:35,166 | WARNING | Work Requests-2026-06-28T161648.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:35,170 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:40:35,260 | INFO | Leyendo archivo: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:40:35,264 | WARNING | Work Requests-2026-06-28T161706.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:35,268 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:40:35,352 | INFO | Leyendo archivo: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:40:35,356 | WARNING | Work Requests-2026-06-28T161744.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:35,361 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:40:35,476 | INFO | Leyendo archivo: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:40:35,481 | WARNING | Work Requests-2026-06-28T161820.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:35,485 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:40:35,576 | INFO | Leyendo archivo: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:40:35,580 | WARNING | Work Requests-2026-06-28T161853.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:40:35,584 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:40:35,694 | INFO | Conexión MySQL OK
+2026-06-28 20:40:35,694 | ERROR | Error durante importación
+Traceback (most recent call last):
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\main.py", line 86, in run_import
+    total = importer.import_dataframe(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\mysql_importer.py", line 86, in import_dataframe
+    raise ValueError(f"Las columnas unique_keys no existen en Excel: {missing_keys}")
+ValueError: Las columnas unique_keys no existen en Excel: ['id']
+2026-06-28 20:44:14,738 | INFO | Leyendo archivo: Work Requests-2026-06-28T160106.xlsx
+2026-06-28 20:44:15,126 | INFO | Leyendo archivo: Work Requests-2026-06-28T160247.xlsx
+2026-06-28 20:44:15,234 | INFO | Leyendo archivo: Work Requests-2026-06-28T160410.xlsx
+2026-06-28 20:44:15,356 | INFO | Leyendo archivo: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:44:15,360 | WARNING | Work Requests-2026-06-28T160451.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:15,365 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:44:15,512 | INFO | Leyendo archivo: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:44:15,516 | WARNING | Work Requests-2026-06-28T160749.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:15,518 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:44:15,604 | INFO | Leyendo archivo: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:44:15,608 | WARNING | Work Requests-2026-06-28T160831.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:15,610 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:44:15,713 | INFO | Leyendo archivo: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:44:15,716 | WARNING | Work Requests-2026-06-28T160901.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:15,722 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:44:15,808 | INFO | Leyendo archivo: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:44:15,812 | WARNING | Work Requests-2026-06-28T160927.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:15,816 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:44:15,931 | INFO | Leyendo archivo: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:44:15,935 | WARNING | Work Requests-2026-06-28T161013.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:15,939 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:44:16,026 | INFO | Leyendo archivo: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:44:16,030 | WARNING | Work Requests-2026-06-28T161050.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:16,036 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:44:16,170 | INFO | Leyendo archivo: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:44:16,174 | WARNING | Work Requests-2026-06-28T161135.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:16,178 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:44:16,293 | INFO | Leyendo archivo: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:44:16,297 | WARNING | Work Requests-2026-06-28T161306.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:16,303 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:44:16,409 | INFO | Leyendo archivo: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:44:16,413 | WARNING | Work Requests-2026-06-28T161509.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:16,420 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:44:16,526 | INFO | Leyendo archivo: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:44:16,530 | WARNING | Work Requests-2026-06-28T161546.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:16,534 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:44:16,632 | INFO | Leyendo archivo: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:44:16,638 | WARNING | Work Requests-2026-06-28T161648.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:16,642 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:44:16,730 | INFO | Leyendo archivo: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:44:16,734 | WARNING | Work Requests-2026-06-28T161706.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:16,738 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:44:16,820 | INFO | Leyendo archivo: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:44:16,824 | WARNING | Work Requests-2026-06-28T161744.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:16,830 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:44:16,940 | INFO | Leyendo archivo: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:44:16,946 | WARNING | Work Requests-2026-06-28T161820.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:16,950 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:44:17,015 | INFO | Leyendo archivo: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:44:17,019 | WARNING | Work Requests-2026-06-28T161853.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:44:17,023 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:44:17,110 | INFO | Conexión MySQL OK
+2026-06-28 20:44:17,112 | INFO | Unique key automática seleccionada: work_request_key
+2026-06-28 20:44:17,116 | INFO | Creando columna faltante: approved_date TEXT NULL
+2026-06-28 20:44:17,203 | INFO | Creando columna faltante: approved_by TEXT NULL
+2026-06-28 20:44:17,240 | INFO | Creando columna faltante: work_request_key VARCHAR(500) NULL
+2026-06-28 20:44:17,274 | INFO | Creando columna faltante: work_request_no VARCHAR(500) NULL
+2026-06-28 20:44:17,306 | INFO | Creando columna faltante: description VARCHAR(500) NULL
+2026-06-28 20:44:17,308 | ERROR | Error durante importación
+Traceback (most recent call last):
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate column name 'description'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\main.py", line 86, in run_import
+    total = importer.import_dataframe(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\mysql_importer.py", line 163, in import_dataframe
+    self.create_missing_columns(df)
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\mysql_importer.py", line 80, in create_missing_columns
+    cur.execute(sql)
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1060 (42S21): Duplicate column name 'description'
+2026-06-28 20:46:43,127 | INFO | Leyendo archivo: Work Requests-2026-06-28T160106.xlsx
+2026-06-28 20:46:43,400 | INFO | Leyendo archivo: Work Requests-2026-06-28T160247.xlsx
+2026-06-28 20:46:43,502 | INFO | Leyendo archivo: Work Requests-2026-06-28T160410.xlsx
+2026-06-28 20:46:43,614 | INFO | Leyendo archivo: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:46:43,616 | WARNING | Work Requests-2026-06-28T160451.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:43,620 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:46:43,732 | INFO | Leyendo archivo: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:46:43,734 | WARNING | Work Requests-2026-06-28T160749.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:43,736 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:46:43,814 | INFO | Leyendo archivo: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:46:43,816 | WARNING | Work Requests-2026-06-28T160831.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:43,820 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:46:43,917 | INFO | Leyendo archivo: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:46:43,919 | WARNING | Work Requests-2026-06-28T160901.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:43,921 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:46:44,002 | INFO | Leyendo archivo: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:46:44,004 | WARNING | Work Requests-2026-06-28T160927.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:44,009 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:46:44,112 | INFO | Leyendo archivo: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:46:44,114 | WARNING | Work Requests-2026-06-28T161013.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:44,118 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:46:44,208 | INFO | Leyendo archivo: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:46:44,210 | WARNING | Work Requests-2026-06-28T161050.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:44,214 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:46:44,348 | INFO | Leyendo archivo: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:46:44,350 | WARNING | Work Requests-2026-06-28T161135.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:44,354 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:46:44,461 | INFO | Leyendo archivo: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:46:44,463 | WARNING | Work Requests-2026-06-28T161306.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:44,467 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:46:44,570 | INFO | Leyendo archivo: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:46:44,574 | WARNING | Work Requests-2026-06-28T161509.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:44,578 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:46:44,678 | INFO | Leyendo archivo: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:46:44,682 | WARNING | Work Requests-2026-06-28T161546.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:44,686 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:46:44,797 | INFO | Leyendo archivo: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:46:44,801 | WARNING | Work Requests-2026-06-28T161648.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:44,805 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:46:44,906 | INFO | Leyendo archivo: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:46:44,908 | WARNING | Work Requests-2026-06-28T161706.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:44,911 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:46:44,999 | INFO | Leyendo archivo: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:46:45,003 | WARNING | Work Requests-2026-06-28T161744.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:45,006 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:46:45,123 | INFO | Leyendo archivo: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:46:45,125 | WARNING | Work Requests-2026-06-28T161820.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:45,132 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:46:45,198 | INFO | Leyendo archivo: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:46:45,200 | WARNING | Work Requests-2026-06-28T161853.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:46:45,204 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:46:45,278 | INFO | Conexión MySQL OK
+2026-06-28 20:46:45,280 | INFO | Unique key automática seleccionada: work_request_key
+2026-06-28 20:46:45,284 | INFO | Creando columna faltante: description VARCHAR(500) NULL
+2026-06-28 20:46:45,288 | WARNING | La columna ya existía en MySQL, se omite: description
+2026-06-28 20:46:45,290 | INFO | Creando columna faltante: note VARCHAR(500) NULL
+2026-06-28 20:46:45,292 | WARNING | La columna ya existía en MySQL, se omite: note
+2026-06-28 20:46:45,300 | INFO | Creando columna faltante: due_date VARCHAR(500) NULL
+2026-06-28 20:46:45,337 | INFO | Creando columna faltante: past_due VARCHAR(500) NULL
+2026-06-28 20:46:45,370 | INFO | Creando columna faltante: priority VARCHAR(500) NULL
+2026-06-28 20:46:45,370 | WARNING | La columna ya existía en MySQL, se omite: priority
+2026-06-28 20:46:45,372 | INFO | Creando columna faltante: equipment_id VARCHAR(500) NULL
+2026-06-28 20:46:45,402 | INFO | Creando columna faltante: equipment_key VARCHAR(500) NULL
+2026-06-28 20:46:45,444 | INFO | Creando columna faltante: work_request_status VARCHAR(500) NULL
+2026-06-28 20:46:45,543 | INFO | Creando columna faltante: workcenter_code VARCHAR(500) NULL
+2026-06-28 20:46:45,584 | INFO | Creando columna faltante: workcenter_name VARCHAR(500) NULL
+2026-06-28 20:46:45,614 | INFO | Creando columna faltante: workcenter_key VARCHAR(500) NULL
+2026-06-28 20:46:45,650 | INFO | Creando columna faltante: requested_by VARCHAR(500) NULL
+2026-06-28 20:46:45,678 | INFO | Creando columna faltante: assigned_to VARCHAR(500) NULL
+2026-06-28 20:46:45,710 | INFO | Creando columna faltante: checklist_key VARCHAR(500) NULL
+2026-06-28 20:46:45,742 | INFO | Creando columna faltante: request_color VARCHAR(500) NULL
+2026-06-28 20:46:45,771 | INFO | Creando columna faltante: priority_color VARCHAR(500) NULL
+2026-06-28 20:46:45,805 | INFO | Creando columna faltante: priority_sort_order VARCHAR(500) NULL
+2026-06-28 20:46:45,839 | INFO | Creando columna faltante: work_request_type_key VARCHAR(500) NULL
+2026-06-28 20:46:45,870 | INFO | Creando columna faltante: work_request_type VARCHAR(500) NULL
+2026-06-28 20:46:45,900 | INFO | Creando columna faltante: cancel_reason TEXT NULL
+2026-06-28 20:46:45,936 | INFO | Creando columna faltante: cancelled VARCHAR(500) NULL
+2026-06-28 20:46:45,938 | WARNING | La columna ya existía en MySQL, se omite: cancelled
+2026-06-28 20:46:45,938 | INFO | Creando columna faltante: building_code VARCHAR(500) NULL
+2026-06-28 20:46:45,973 | INFO | Creando columna faltante: equipment_group VARCHAR(500) NULL
+2026-06-28 20:46:46,006 | INFO | Creando columna faltante: scheduled_hours VARCHAR(500) NULL
+2026-06-28 20:46:46,038 | INFO | Creando columna faltante: location VARCHAR(500) NULL
+2026-06-28 20:46:46,038 | WARNING | La columna ya existía en MySQL, se omite: location
+2026-06-28 20:46:46,040 | INFO | Creando columna faltante: department TEXT NULL
+2026-06-28 20:46:46,042 | WARNING | La columna ya existía en MySQL, se omite: department
+2026-06-28 20:46:46,044 | INFO | Creando columna faltante: complete_date VARCHAR(500) NULL
+2026-06-28 20:46:46,078 | INFO | Creando columna faltante: duration VARCHAR(500) NULL
+2026-06-28 20:46:46,080 | WARNING | La columna ya existía en MySQL, se omite: duration
+2026-06-28 20:46:46,090 | INFO | Creando columna faltante: request_date VARCHAR(500) NULL
+2026-06-28 20:46:46,221 | INFO | Creando columna faltante: subsystem VARCHAR(500) NULL
+2026-06-28 20:46:46,221 | WARNING | La columna ya existía en MySQL, se omite: subsystem
+2026-06-28 20:46:46,223 | INFO | Creando columna faltante: equipment_parts TEXT NULL
+2026-06-28 20:46:46,249 | INFO | Creando columna faltante: asset_no TEXT NULL
+2026-06-28 20:46:46,281 | INFO | Creando columna faltante: asset_no_from_key TEXT NULL
+2026-06-28 20:46:46,312 | INFO | Creando columna faltante: pmschedule_key VARCHAR(500) NULL
+2026-06-28 20:46:46,343 | INFO | Creando columna faltante: pm_schedule_s VARCHAR(500) NULL
+2026-06-28 20:46:46,382 | INFO | Creando columna faltante: archivo_origen VARCHAR(500) NULL
+2026-06-28 20:46:46,425 | INFO | Creando columna faltante: hoja_origen VARCHAR(500) NULL
+2026-06-28 20:46:46,475 | INFO | Creando índice único para ON DUPLICATE KEY: uk_work_request_key (`work_request_key`)
+2026-06-28 20:46:46,612 | ERROR | Error durante importación
+Traceback (most recent call last):
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Field 'WorkRequestNo' doesn't have a default value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\main.py", line 86, in run_import
+    total = importer.import_dataframe(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\Downloads\importador_universal_mysql\src\mysql_importer.py", line 228, in import_dataframe
+    cur.executemany(sql, batch)
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodriguez-m\AppData\Local\Programs\Python\Python311\Lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 1364 (HY000): Field 'WorkRequestNo' doesn't have a default value
+2026-06-28 20:50:14,231 | INFO | Leyendo archivo: Work Requests-2026-06-28T160106.xlsx
+2026-06-28 20:50:14,568 | INFO | Leyendo archivo: Work Requests-2026-06-28T160247.xlsx
+2026-06-28 20:50:14,674 | INFO | Leyendo archivo: Work Requests-2026-06-28T160410.xlsx
+2026-06-28 20:50:14,786 | INFO | Leyendo archivo: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:50:14,790 | WARNING | Work Requests-2026-06-28T160451.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:14,794 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:50:14,906 | INFO | Leyendo archivo: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:50:14,910 | WARNING | Work Requests-2026-06-28T160749.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:14,914 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:50:14,992 | INFO | Leyendo archivo: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:50:14,996 | WARNING | Work Requests-2026-06-28T160831.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:15,000 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:50:15,099 | INFO | Leyendo archivo: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:50:15,103 | WARNING | Work Requests-2026-06-28T160901.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:15,107 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:50:15,183 | INFO | Leyendo archivo: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:50:15,187 | WARNING | Work Requests-2026-06-28T160927.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:15,193 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:50:15,299 | INFO | Leyendo archivo: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:50:15,301 | WARNING | Work Requests-2026-06-28T161013.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:15,305 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:50:15,393 | INFO | Leyendo archivo: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:50:15,397 | WARNING | Work Requests-2026-06-28T161050.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:15,401 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:50:15,545 | INFO | Leyendo archivo: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:50:15,548 | WARNING | Work Requests-2026-06-28T161135.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:15,553 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:50:15,663 | INFO | Leyendo archivo: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:50:15,667 | WARNING | Work Requests-2026-06-28T161306.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:15,672 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:50:15,778 | INFO | Leyendo archivo: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:50:15,782 | WARNING | Work Requests-2026-06-28T161509.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:15,786 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:50:15,888 | INFO | Leyendo archivo: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:50:15,892 | WARNING | Work Requests-2026-06-28T161546.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:15,896 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:50:15,990 | INFO | Leyendo archivo: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:50:15,994 | WARNING | Work Requests-2026-06-28T161648.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:15,998 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:50:16,084 | INFO | Leyendo archivo: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:50:16,097 | WARNING | Work Requests-2026-06-28T161706.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:16,101 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:50:16,174 | INFO | Leyendo archivo: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:50:16,178 | WARNING | Work Requests-2026-06-28T161744.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:16,182 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:50:16,287 | INFO | Leyendo archivo: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:50:16,291 | WARNING | Work Requests-2026-06-28T161820.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:16,296 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:50:16,361 | INFO | Leyendo archivo: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:50:16,363 | WARNING | Work Requests-2026-06-28T161853.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:50:16,367 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:50:16,453 | INFO | Conexión MySQL OK
+2026-06-28 20:50:16,458 | INFO | Mapeo columna Excel -> MySQL: approved_date -> ApprovedDate
+2026-06-28 20:50:16,461 | INFO | Mapeo columna Excel -> MySQL: approved_by -> ApprovedBy
+2026-06-28 20:50:16,461 | INFO | Mapeo columna Excel -> MySQL: work_request_key -> WorkRequestKey
+2026-06-28 20:50:16,461 | INFO | Mapeo columna Excel -> MySQL: work_request_no -> WorkRequestNo
+2026-06-28 20:50:16,461 | INFO | Mapeo columna Excel -> MySQL: description -> Description
+2026-06-28 20:50:16,461 | INFO | Mapeo columna Excel -> MySQL: note -> Note
+2026-06-28 20:50:16,461 | INFO | Mapeo columna Excel -> MySQL: due_date -> DueDate
+2026-06-28 20:50:16,463 | INFO | Mapeo columna Excel -> MySQL: past_due -> PastDue
+2026-06-28 20:50:16,463 | INFO | Mapeo columna Excel -> MySQL: priority -> Priority
+2026-06-28 20:50:16,463 | INFO | Mapeo columna Excel -> MySQL: equipment_id -> EquipmentID
+2026-06-28 20:50:16,463 | INFO | Mapeo columna Excel -> MySQL: equipment_key -> EquipmentKey
+2026-06-28 20:50:16,463 | INFO | Mapeo columna Excel -> MySQL: work_request_status -> WorkRequestStatus
+2026-06-28 20:50:16,465 | INFO | Mapeo columna Excel -> MySQL: workcenter_code -> WorkcenterCode
+2026-06-28 20:50:16,465 | INFO | Mapeo columna Excel -> MySQL: workcenter_name -> WorkcenterName
+2026-06-28 20:50:16,465 | INFO | Mapeo columna Excel -> MySQL: workcenter_key -> WorkcenterKey
+2026-06-28 20:50:16,465 | INFO | Mapeo columna Excel -> MySQL: requested_by -> RequestedBy
+2026-06-28 20:50:16,465 | INFO | Mapeo columna Excel -> MySQL: assigned_to -> AssignedTo
+2026-06-28 20:50:16,467 | INFO | Mapeo columna Excel -> MySQL: checklist_key -> ChecklistKey
+2026-06-28 20:50:16,467 | INFO | Mapeo columna Excel -> MySQL: request_color -> RequestColor
+2026-06-28 20:50:16,467 | INFO | Mapeo columna Excel -> MySQL: priority_color -> PriorityColor
+2026-06-28 20:50:16,467 | INFO | Mapeo columna Excel -> MySQL: priority_sort_order -> PrioritySortOrder
+2026-06-28 20:50:16,467 | INFO | Mapeo columna Excel -> MySQL: work_request_type_key -> WorkRequestTypeKey
+2026-06-28 20:50:16,467 | INFO | Mapeo columna Excel -> MySQL: work_request_type -> WorkRequestType
+2026-06-28 20:50:16,467 | INFO | Mapeo columna Excel -> MySQL: cancel_reason -> CancelReason
+2026-06-28 20:50:16,467 | INFO | Mapeo columna Excel -> MySQL: cancelled -> Cancelled
+2026-06-28 20:50:16,469 | INFO | Mapeo columna Excel -> MySQL: building_code -> BuildingCode
+2026-06-28 20:50:16,470 | INFO | Mapeo columna Excel -> MySQL: equipment_group -> EquipmentGroup
+2026-06-28 20:50:16,470 | INFO | Mapeo columna Excel -> MySQL: scheduled_hours -> ScheduledHours
+2026-06-28 20:50:16,470 | INFO | Mapeo columna Excel -> MySQL: location -> Location
+2026-06-28 20:50:16,470 | INFO | Mapeo columna Excel -> MySQL: department -> Department
+2026-06-28 20:50:16,470 | INFO | Mapeo columna Excel -> MySQL: complete_date -> CompleteDate
+2026-06-28 20:50:16,470 | INFO | Mapeo columna Excel -> MySQL: duration -> Duration
+2026-06-28 20:50:16,471 | INFO | Mapeo columna Excel -> MySQL: request_date -> RequestDate
+2026-06-28 20:50:16,472 | INFO | Mapeo columna Excel -> MySQL: subsystem -> Subsystem
+2026-06-28 20:50:16,472 | INFO | Mapeo columna Excel -> MySQL: equipment_parts -> EquipmentParts
+2026-06-28 20:50:16,472 | INFO | Mapeo columna Excel -> MySQL: asset_no -> AssetNo
+2026-06-28 20:50:16,474 | INFO | Mapeo columna Excel -> MySQL: asset_no_from_key -> AssetNoFromKey
+2026-06-28 20:50:16,474 | INFO | Mapeo columna Excel -> MySQL: pmschedule_key -> PMScheduleKey
+2026-06-28 20:50:16,474 | INFO | Mapeo columna Excel -> MySQL: pm_schedule_s -> PMSchedules
+2026-06-28 20:50:16,476 | INFO | Unique key automática seleccionada: WorkRequestNo
+2026-06-28 20:50:16,666 | INFO | Lote importado: 500/6483
+2026-06-28 20:50:16,862 | INFO | Lote importado: 1000/6483
+2026-06-28 20:50:17,013 | INFO | Lote importado: 1500/6483
+2026-06-28 20:50:17,083 | INFO | Lote importado: 2000/6483
+2026-06-28 20:50:17,147 | INFO | Lote importado: 2500/6483
+2026-06-28 20:50:17,215 | INFO | Lote importado: 3000/6483
+2026-06-28 20:50:17,357 | INFO | Lote importado: 3500/6483
+2026-06-28 20:50:17,424 | INFO | Lote importado: 4000/6483
+2026-06-28 20:50:17,538 | INFO | Lote importado: 4500/6483
+2026-06-28 20:50:17,649 | INFO | Lote importado: 5000/6483
+2026-06-28 20:50:17,749 | INFO | Lote importado: 5500/6483
+2026-06-28 20:50:17,883 | INFO | Lote importado: 6000/6483
+2026-06-28 20:50:17,945 | INFO | Lote importado: 6483/6483
+2026-06-28 20:54:16,715 | INFO | Leyendo archivo: Work Requests-2026-06-28T160106.xlsx
+2026-06-28 20:54:16,821 | INFO | Leyendo archivo: Work Requests-2026-06-28T160247.xlsx
+2026-06-28 20:54:16,944 | INFO | Leyendo archivo: Work Requests-2026-06-28T160410.xlsx
+2026-06-28 20:54:17,053 | INFO | Leyendo archivo: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:54:17,057 | WARNING | Work Requests-2026-06-28T160451.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:17,060 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:54:17,166 | INFO | Leyendo archivo: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:54:17,170 | WARNING | Work Requests-2026-06-28T160749.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:17,174 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:54:17,250 | INFO | Leyendo archivo: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:54:17,254 | WARNING | Work Requests-2026-06-28T160831.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:17,258 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:54:17,342 | INFO | Leyendo archivo: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:54:17,346 | WARNING | Work Requests-2026-06-28T160901.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:17,349 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:54:17,440 | INFO | Leyendo archivo: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:54:17,443 | WARNING | Work Requests-2026-06-28T160927.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:17,450 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:54:17,551 | INFO | Leyendo archivo: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:54:17,555 | WARNING | Work Requests-2026-06-28T161013.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:17,557 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:54:17,641 | INFO | Leyendo archivo: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:54:17,645 | WARNING | Work Requests-2026-06-28T161050.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:17,649 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:54:17,786 | INFO | Leyendo archivo: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:54:17,790 | WARNING | Work Requests-2026-06-28T161135.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:17,795 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:54:17,899 | INFO | Leyendo archivo: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:54:17,903 | WARNING | Work Requests-2026-06-28T161306.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:17,907 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:54:18,011 | INFO | Leyendo archivo: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:54:18,015 | WARNING | Work Requests-2026-06-28T161509.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:18,019 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:54:18,108 | INFO | Leyendo archivo: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:54:18,111 | WARNING | Work Requests-2026-06-28T161546.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:18,115 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:54:18,228 | INFO | Leyendo archivo: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:54:18,232 | WARNING | Work Requests-2026-06-28T161648.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:18,236 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:54:18,318 | INFO | Leyendo archivo: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:54:18,322 | WARNING | Work Requests-2026-06-28T161706.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:18,329 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:54:18,402 | INFO | Leyendo archivo: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:54:18,405 | WARNING | Work Requests-2026-06-28T161744.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:18,410 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:54:18,494 | INFO | Leyendo archivo: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:54:18,498 | WARNING | Work Requests-2026-06-28T161820.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:18,502 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:54:18,579 | INFO | Leyendo archivo: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:54:18,583 | WARNING | Work Requests-2026-06-28T161853.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:18,587 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:54:18,625 | INFO | Leyendo archivo: Work Requests-2026-06-28T162027.xlsx
+2026-06-28 20:54:18,631 | WARNING | Work Requests-2026-06-28T162027.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:18,633 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162027.xlsx
+2026-06-28 20:54:18,705 | INFO | Leyendo archivo: Work Requests-2026-06-28T162107.xlsx
+2026-06-28 20:54:18,709 | WARNING | Work Requests-2026-06-28T162107.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:18,716 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162107.xlsx
+2026-06-28 20:54:18,799 | INFO | Leyendo archivo: Work Requests-2026-06-28T162144.xlsx
+2026-06-28 20:54:18,802 | WARNING | Work Requests-2026-06-28T162144.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:18,803 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162144.xlsx
+2026-06-28 20:54:18,865 | INFO | Conexión MySQL OK
+2026-06-28 20:54:18,872 | INFO | Mapeo columna Excel -> MySQL: approved_date -> ApprovedDate
+2026-06-28 20:54:18,872 | INFO | Mapeo columna Excel -> MySQL: approved_by -> ApprovedBy
+2026-06-28 20:54:18,872 | INFO | Mapeo columna Excel -> MySQL: work_request_key -> WorkRequestKey
+2026-06-28 20:54:18,872 | INFO | Mapeo columna Excel -> MySQL: work_request_no -> WorkRequestNo
+2026-06-28 20:54:18,874 | INFO | Mapeo columna Excel -> MySQL: description -> Description
+2026-06-28 20:54:18,874 | INFO | Mapeo columna Excel -> MySQL: note -> Note
+2026-06-28 20:54:18,874 | INFO | Mapeo columna Excel -> MySQL: due_date -> DueDate
+2026-06-28 20:54:18,874 | INFO | Mapeo columna Excel -> MySQL: past_due -> PastDue
+2026-06-28 20:54:18,874 | INFO | Mapeo columna Excel -> MySQL: priority -> Priority
+2026-06-28 20:54:18,876 | INFO | Mapeo columna Excel -> MySQL: equipment_id -> EquipmentID
+2026-06-28 20:54:18,876 | INFO | Mapeo columna Excel -> MySQL: equipment_key -> EquipmentKey
+2026-06-28 20:54:18,876 | INFO | Mapeo columna Excel -> MySQL: work_request_status -> WorkRequestStatus
+2026-06-28 20:54:18,878 | INFO | Mapeo columna Excel -> MySQL: workcenter_code -> WorkcenterCode
+2026-06-28 20:54:18,878 | INFO | Mapeo columna Excel -> MySQL: workcenter_name -> WorkcenterName
+2026-06-28 20:54:18,878 | INFO | Mapeo columna Excel -> MySQL: workcenter_key -> WorkcenterKey
+2026-06-28 20:54:18,878 | INFO | Mapeo columna Excel -> MySQL: requested_by -> RequestedBy
+2026-06-28 20:54:18,880 | INFO | Mapeo columna Excel -> MySQL: assigned_to -> AssignedTo
+2026-06-28 20:54:18,880 | INFO | Mapeo columna Excel -> MySQL: checklist_key -> ChecklistKey
+2026-06-28 20:54:18,880 | INFO | Mapeo columna Excel -> MySQL: request_color -> RequestColor
+2026-06-28 20:54:18,880 | INFO | Mapeo columna Excel -> MySQL: priority_color -> PriorityColor
+2026-06-28 20:54:18,880 | INFO | Mapeo columna Excel -> MySQL: priority_sort_order -> PrioritySortOrder
+2026-06-28 20:54:18,880 | INFO | Mapeo columna Excel -> MySQL: work_request_type_key -> WorkRequestTypeKey
+2026-06-28 20:54:18,880 | INFO | Mapeo columna Excel -> MySQL: work_request_type -> WorkRequestType
+2026-06-28 20:54:18,882 | INFO | Mapeo columna Excel -> MySQL: cancel_reason -> CancelReason
+2026-06-28 20:54:18,882 | INFO | Mapeo columna Excel -> MySQL: cancelled -> Cancelled
+2026-06-28 20:54:18,884 | INFO | Mapeo columna Excel -> MySQL: building_code -> BuildingCode
+2026-06-28 20:54:18,884 | INFO | Mapeo columna Excel -> MySQL: equipment_group -> EquipmentGroup
+2026-06-28 20:54:18,884 | INFO | Mapeo columna Excel -> MySQL: scheduled_hours -> ScheduledHours
+2026-06-28 20:54:18,884 | INFO | Mapeo columna Excel -> MySQL: location -> Location
+2026-06-28 20:54:18,886 | INFO | Mapeo columna Excel -> MySQL: department -> Department
+2026-06-28 20:54:18,886 | INFO | Mapeo columna Excel -> MySQL: complete_date -> CompleteDate
+2026-06-28 20:54:18,886 | INFO | Mapeo columna Excel -> MySQL: duration -> Duration
+2026-06-28 20:54:18,888 | INFO | Mapeo columna Excel -> MySQL: request_date -> RequestDate
+2026-06-28 20:54:18,888 | INFO | Mapeo columna Excel -> MySQL: subsystem -> Subsystem
+2026-06-28 20:54:18,888 | INFO | Mapeo columna Excel -> MySQL: equipment_parts -> EquipmentParts
+2026-06-28 20:54:18,888 | INFO | Mapeo columna Excel -> MySQL: asset_no -> AssetNo
+2026-06-28 20:54:18,888 | INFO | Mapeo columna Excel -> MySQL: asset_no_from_key -> AssetNoFromKey
+2026-06-28 20:54:18,888 | INFO | Mapeo columna Excel -> MySQL: pmschedule_key -> PMScheduleKey
+2026-06-28 20:54:18,888 | INFO | Mapeo columna Excel -> MySQL: pm_schedule_s -> PMSchedules
+2026-06-28 20:54:18,890 | INFO | Unique key automática seleccionada: WorkRequestNo
+2026-06-28 20:54:18,982 | INFO | Lote importado: 500/7009
+2026-06-28 20:54:19,011 | INFO | Lote importado: 1000/7009
+2026-06-28 20:54:19,039 | INFO | Lote importado: 1500/7009
+2026-06-28 20:54:19,069 | INFO | Lote importado: 2000/7009
+2026-06-28 20:54:19,099 | INFO | Lote importado: 2500/7009
+2026-06-28 20:54:19,137 | INFO | Lote importado: 3000/7009
+2026-06-28 20:54:19,165 | INFO | Lote importado: 3500/7009
+2026-06-28 20:54:19,210 | INFO | Lote importado: 4000/7009
+2026-06-28 20:54:19,251 | INFO | Lote importado: 4500/7009
+2026-06-28 20:54:19,287 | INFO | Lote importado: 5000/7009
+2026-06-28 20:54:19,319 | INFO | Lote importado: 5500/7009
+2026-06-28 20:54:19,367 | INFO | Lote importado: 6000/7009
+2026-06-28 20:54:19,402 | INFO | Lote importado: 6500/7009
+2026-06-28 20:54:19,485 | INFO | Lote importado: 7000/7009
+2026-06-28 20:54:19,493 | INFO | Lote importado: 7009/7009
+2026-06-28 20:54:29,361 | INFO | Leyendo archivo: Work Requests-2026-06-28T160106.xlsx
+2026-06-28 20:54:29,478 | INFO | Leyendo archivo: Work Requests-2026-06-28T160247.xlsx
+2026-06-28 20:54:29,575 | INFO | Leyendo archivo: Work Requests-2026-06-28T160410.xlsx
+2026-06-28 20:54:29,683 | INFO | Leyendo archivo: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:54:29,684 | WARNING | Work Requests-2026-06-28T160451.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:29,688 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:54:29,801 | INFO | Leyendo archivo: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:54:29,803 | WARNING | Work Requests-2026-06-28T160749.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:29,807 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:54:29,907 | INFO | Leyendo archivo: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:54:29,909 | WARNING | Work Requests-2026-06-28T160831.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:29,913 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:54:29,997 | INFO | Leyendo archivo: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:54:29,999 | WARNING | Work Requests-2026-06-28T160901.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:30,001 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:54:30,081 | INFO | Leyendo archivo: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:54:30,083 | WARNING | Work Requests-2026-06-28T160927.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:30,087 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:54:30,189 | INFO | Leyendo archivo: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:54:30,193 | WARNING | Work Requests-2026-06-28T161013.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:30,196 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:54:30,295 | INFO | Leyendo archivo: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:54:30,297 | WARNING | Work Requests-2026-06-28T161050.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:30,301 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:54:30,418 | INFO | Leyendo archivo: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:54:30,422 | WARNING | Work Requests-2026-06-28T161135.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:30,424 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:54:30,533 | INFO | Leyendo archivo: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:54:30,535 | WARNING | Work Requests-2026-06-28T161306.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:30,539 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:54:30,664 | INFO | Leyendo archivo: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:54:30,666 | WARNING | Work Requests-2026-06-28T161509.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:30,669 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:54:30,763 | INFO | Leyendo archivo: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:54:30,765 | WARNING | Work Requests-2026-06-28T161546.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:30,769 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:54:30,865 | INFO | Leyendo archivo: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:54:30,866 | WARNING | Work Requests-2026-06-28T161648.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:30,871 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:54:30,974 | INFO | Leyendo archivo: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:54:30,977 | WARNING | Work Requests-2026-06-28T161706.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:30,981 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:54:31,057 | INFO | Leyendo archivo: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:54:31,059 | WARNING | Work Requests-2026-06-28T161744.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:31,064 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:54:31,146 | INFO | Leyendo archivo: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:54:31,148 | WARNING | Work Requests-2026-06-28T161820.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:31,152 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:54:31,217 | INFO | Leyendo archivo: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:54:31,219 | WARNING | Work Requests-2026-06-28T161853.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:31,221 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:54:31,261 | INFO | Leyendo archivo: Work Requests-2026-06-28T162027.xlsx
+2026-06-28 20:54:31,263 | WARNING | Work Requests-2026-06-28T162027.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:31,267 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162027.xlsx
+2026-06-28 20:54:31,351 | INFO | Leyendo archivo: Work Requests-2026-06-28T162107.xlsx
+2026-06-28 20:54:31,354 | WARNING | Work Requests-2026-06-28T162107.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:31,357 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162107.xlsx
+2026-06-28 20:54:31,442 | INFO | Leyendo archivo: Work Requests-2026-06-28T162144.xlsx
+2026-06-28 20:54:31,444 | WARNING | Work Requests-2026-06-28T162144.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:31,448 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162144.xlsx
+2026-06-28 20:54:31,479 | INFO | Leyendo archivo: Work Requests-2026-06-28T162308.xlsx
+2026-06-28 20:54:31,485 | WARNING | Work Requests-2026-06-28T162308.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:31,487 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162308.xlsx
+2026-06-28 20:54:31,554 | INFO | Conexión MySQL OK
+2026-06-28 20:54:31,560 | INFO | Mapeo columna Excel -> MySQL: approved_date -> ApprovedDate
+2026-06-28 20:54:31,562 | INFO | Mapeo columna Excel -> MySQL: approved_by -> ApprovedBy
+2026-06-28 20:54:31,562 | INFO | Mapeo columna Excel -> MySQL: work_request_key -> WorkRequestKey
+2026-06-28 20:54:31,562 | INFO | Mapeo columna Excel -> MySQL: work_request_no -> WorkRequestNo
+2026-06-28 20:54:31,562 | INFO | Mapeo columna Excel -> MySQL: description -> Description
+2026-06-28 20:54:31,562 | INFO | Mapeo columna Excel -> MySQL: note -> Note
+2026-06-28 20:54:31,562 | INFO | Mapeo columna Excel -> MySQL: due_date -> DueDate
+2026-06-28 20:54:31,564 | INFO | Mapeo columna Excel -> MySQL: past_due -> PastDue
+2026-06-28 20:54:31,564 | INFO | Mapeo columna Excel -> MySQL: priority -> Priority
+2026-06-28 20:54:31,564 | INFO | Mapeo columna Excel -> MySQL: equipment_id -> EquipmentID
+2026-06-28 20:54:31,564 | INFO | Mapeo columna Excel -> MySQL: equipment_key -> EquipmentKey
+2026-06-28 20:54:31,564 | INFO | Mapeo columna Excel -> MySQL: work_request_status -> WorkRequestStatus
+2026-06-28 20:54:31,564 | INFO | Mapeo columna Excel -> MySQL: workcenter_code -> WorkcenterCode
+2026-06-28 20:54:31,566 | INFO | Mapeo columna Excel -> MySQL: workcenter_name -> WorkcenterName
+2026-06-28 20:54:31,566 | INFO | Mapeo columna Excel -> MySQL: workcenter_key -> WorkcenterKey
+2026-06-28 20:54:31,566 | INFO | Mapeo columna Excel -> MySQL: requested_by -> RequestedBy
+2026-06-28 20:54:31,568 | INFO | Mapeo columna Excel -> MySQL: assigned_to -> AssignedTo
+2026-06-28 20:54:31,568 | INFO | Mapeo columna Excel -> MySQL: checklist_key -> ChecklistKey
+2026-06-28 20:54:31,568 | INFO | Mapeo columna Excel -> MySQL: request_color -> RequestColor
+2026-06-28 20:54:31,568 | INFO | Mapeo columna Excel -> MySQL: priority_color -> PriorityColor
+2026-06-28 20:54:31,568 | INFO | Mapeo columna Excel -> MySQL: priority_sort_order -> PrioritySortOrder
+2026-06-28 20:54:31,570 | INFO | Mapeo columna Excel -> MySQL: work_request_type_key -> WorkRequestTypeKey
+2026-06-28 20:54:31,570 | INFO | Mapeo columna Excel -> MySQL: work_request_type -> WorkRequestType
+2026-06-28 20:54:31,570 | INFO | Mapeo columna Excel -> MySQL: cancel_reason -> CancelReason
+2026-06-28 20:54:31,570 | INFO | Mapeo columna Excel -> MySQL: cancelled -> Cancelled
+2026-06-28 20:54:31,570 | INFO | Mapeo columna Excel -> MySQL: building_code -> BuildingCode
+2026-06-28 20:54:31,570 | INFO | Mapeo columna Excel -> MySQL: equipment_group -> EquipmentGroup
+2026-06-28 20:54:31,572 | INFO | Mapeo columna Excel -> MySQL: scheduled_hours -> ScheduledHours
+2026-06-28 20:54:31,572 | INFO | Mapeo columna Excel -> MySQL: location -> Location
+2026-06-28 20:54:31,572 | INFO | Mapeo columna Excel -> MySQL: department -> Department
+2026-06-28 20:54:31,572 | INFO | Mapeo columna Excel -> MySQL: complete_date -> CompleteDate
+2026-06-28 20:54:31,572 | INFO | Mapeo columna Excel -> MySQL: duration -> Duration
+2026-06-28 20:54:31,572 | INFO | Mapeo columna Excel -> MySQL: request_date -> RequestDate
+2026-06-28 20:54:31,572 | INFO | Mapeo columna Excel -> MySQL: subsystem -> Subsystem
+2026-06-28 20:54:31,574 | INFO | Mapeo columna Excel -> MySQL: equipment_parts -> EquipmentParts
+2026-06-28 20:54:31,574 | INFO | Mapeo columna Excel -> MySQL: asset_no -> AssetNo
+2026-06-28 20:54:31,574 | INFO | Mapeo columna Excel -> MySQL: asset_no_from_key -> AssetNoFromKey
+2026-06-28 20:54:31,574 | INFO | Mapeo columna Excel -> MySQL: pmschedule_key -> PMScheduleKey
+2026-06-28 20:54:31,574 | INFO | Mapeo columna Excel -> MySQL: pm_schedule_s -> PMSchedules
+2026-06-28 20:54:31,576 | INFO | Unique key automática seleccionada: WorkRequestNo
+2026-06-28 20:54:31,669 | INFO | Lote importado: 500/7077
+2026-06-28 20:54:31,697 | INFO | Lote importado: 1000/7077
+2026-06-28 20:54:31,726 | INFO | Lote importado: 1500/7077
+2026-06-28 20:54:31,757 | INFO | Lote importado: 2000/7077
+2026-06-28 20:54:31,785 | INFO | Lote importado: 2500/7077
+2026-06-28 20:54:31,817 | INFO | Lote importado: 3000/7077
+2026-06-28 20:54:31,851 | INFO | Lote importado: 3500/7077
+2026-06-28 20:54:31,888 | INFO | Lote importado: 4000/7077
+2026-06-28 20:54:31,918 | INFO | Lote importado: 4500/7077
+2026-06-28 20:54:31,968 | INFO | Lote importado: 5000/7077
+2026-06-28 20:54:31,999 | INFO | Lote importado: 5500/7077
+2026-06-28 20:54:32,033 | INFO | Lote importado: 6000/7077
+2026-06-28 20:54:32,065 | INFO | Lote importado: 6500/7077
+2026-06-28 20:54:32,110 | INFO | Lote importado: 7000/7077
+2026-06-28 20:54:32,126 | INFO | Lote importado: 7077/7077
+2026-06-28 20:54:43,933 | INFO | Leyendo archivo: Work Requests-2026-06-28T160106.xlsx
+2026-06-28 20:54:44,052 | INFO | Leyendo archivo: Work Requests-2026-06-28T160247.xlsx
+2026-06-28 20:54:44,157 | INFO | Leyendo archivo: Work Requests-2026-06-28T160410.xlsx
+2026-06-28 20:54:44,276 | INFO | Leyendo archivo: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:54:44,277 | WARNING | Work Requests-2026-06-28T160451.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:44,282 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160451.xlsx
+2026-06-28 20:54:44,391 | INFO | Leyendo archivo: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:54:44,395 | WARNING | Work Requests-2026-06-28T160749.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:44,399 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160749.xlsx
+2026-06-28 20:54:44,486 | INFO | Leyendo archivo: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:54:44,488 | WARNING | Work Requests-2026-06-28T160831.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:44,492 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160831.xlsx
+2026-06-28 20:54:44,598 | INFO | Leyendo archivo: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:54:44,600 | WARNING | Work Requests-2026-06-28T160901.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:44,604 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160901.xlsx
+2026-06-28 20:54:44,689 | INFO | Leyendo archivo: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:54:44,691 | WARNING | Work Requests-2026-06-28T160927.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:44,695 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T160927.xlsx
+2026-06-28 20:54:44,804 | INFO | Leyendo archivo: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:54:44,806 | WARNING | Work Requests-2026-06-28T161013.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:44,812 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161013.xlsx
+2026-06-28 20:54:44,899 | INFO | Leyendo archivo: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:54:44,901 | WARNING | Work Requests-2026-06-28T161050.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:44,908 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161050.xlsx
+2026-06-28 20:54:45,039 | INFO | Leyendo archivo: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:54:45,041 | WARNING | Work Requests-2026-06-28T161135.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,045 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161135.xlsx
+2026-06-28 20:54:45,151 | INFO | Leyendo archivo: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:54:45,153 | WARNING | Work Requests-2026-06-28T161306.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,157 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161306.xlsx
+2026-06-28 20:54:45,264 | INFO | Leyendo archivo: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:54:45,266 | WARNING | Work Requests-2026-06-28T161509.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,268 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161509.xlsx
+2026-06-28 20:54:45,373 | INFO | Leyendo archivo: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:54:45,377 | WARNING | Work Requests-2026-06-28T161546.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,381 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161546.xlsx
+2026-06-28 20:54:45,479 | INFO | Leyendo archivo: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:54:45,481 | WARNING | Work Requests-2026-06-28T161648.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,485 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161648.xlsx
+2026-06-28 20:54:45,568 | INFO | Leyendo archivo: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:54:45,570 | WARNING | Work Requests-2026-06-28T161706.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,574 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161706.xlsx
+2026-06-28 20:54:45,656 | INFO | Leyendo archivo: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:54:45,656 | WARNING | Work Requests-2026-06-28T161744.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,660 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161744.xlsx
+2026-06-28 20:54:45,770 | INFO | Leyendo archivo: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:54:45,779 | WARNING | Work Requests-2026-06-28T161820.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,782 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161820.xlsx
+2026-06-28 20:54:45,846 | INFO | Leyendo archivo: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:54:45,848 | WARNING | Work Requests-2026-06-28T161853.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,852 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T161853.xlsx
+2026-06-28 20:54:45,893 | INFO | Leyendo archivo: Work Requests-2026-06-28T162027.xlsx
+2026-06-28 20:54:45,895 | WARNING | Work Requests-2026-06-28T162027.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,899 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162027.xlsx
+2026-06-28 20:54:45,967 | INFO | Leyendo archivo: Work Requests-2026-06-28T162107.xlsx
+2026-06-28 20:54:45,969 | WARNING | Work Requests-2026-06-28T162107.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:45,973 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162107.xlsx
+2026-06-28 20:54:46,053 | INFO | Leyendo archivo: Work Requests-2026-06-28T162144.xlsx
+2026-06-28 20:54:46,057 | WARNING | Work Requests-2026-06-28T162144.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,059 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162144.xlsx
+2026-06-28 20:54:46,087 | INFO | Leyendo archivo: Work Requests-2026-06-28T162308.xlsx
+2026-06-28 20:54:46,089 | WARNING | Work Requests-2026-06-28T162308.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,092 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162308.xlsx
+2026-06-28 20:54:46,128 | INFO | Leyendo archivo: Work Requests-2026-06-28T162928.xlsx
+2026-06-28 20:54:46,132 | WARNING | Work Requests-2026-06-28T162928.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,138 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T162928.xlsx
+2026-06-28 20:54:46,229 | INFO | Leyendo archivo: Work Requests-2026-06-28T163229.xlsx
+2026-06-28 20:54:46,233 | WARNING | Work Requests-2026-06-28T163229.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,237 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T163229.xlsx
+2026-06-28 20:54:46,334 | INFO | Leyendo archivo: Work Requests-2026-06-28T163253.xlsx
+2026-06-28 20:54:46,338 | WARNING | Work Requests-2026-06-28T163253.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,342 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T163253.xlsx
+2026-06-28 20:54:46,425 | INFO | Leyendo archivo: Work Requests-2026-06-28T163319.xlsx
+2026-06-28 20:54:46,430 | WARNING | Work Requests-2026-06-28T163319.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,436 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T163319.xlsx
+2026-06-28 20:54:46,536 | INFO | Leyendo archivo: Work Requests-2026-06-28T163458.xlsx
+2026-06-28 20:54:46,540 | WARNING | Work Requests-2026-06-28T163458.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,542 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T163458.xlsx
+2026-06-28 20:54:46,643 | INFO | Leyendo archivo: Work Requests-2026-06-28T163512.xlsx
+2026-06-28 20:54:46,648 | WARNING | Work Requests-2026-06-28T163512.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,652 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T163512.xlsx
+2026-06-28 20:54:46,742 | INFO | Leyendo archivo: Work Requests-2026-06-28T163527.xlsx
+2026-06-28 20:54:46,747 | WARNING | Work Requests-2026-06-28T163527.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,753 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T163527.xlsx
+2026-06-28 20:54:46,857 | INFO | Leyendo archivo: Work Requests-2026-06-28T163550.xlsx
+2026-06-28 20:54:46,861 | WARNING | Work Requests-2026-06-28T163550.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,865 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T163550.xlsx
+2026-06-28 20:54:46,954 | INFO | Leyendo archivo: Work Requests-2026-06-28T163608.xlsx
+2026-06-28 20:54:46,960 | WARNING | Work Requests-2026-06-28T163608.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:46,962 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T163608.xlsx
+2026-06-28 20:54:47,000 | INFO | Leyendo archivo: Work Requests-2026-06-28T163632.xlsx
+2026-06-28 20:54:47,004 | WARNING | Work Requests-2026-06-28T163632.xlsx: openpyxl rechazó estilos del archivo. Intentando reparación temporal...
+2026-06-28 20:54:47,008 | WARNING | Estilos inválidos reparados en copia temporal: Work Requests-2026-06-28T163632.xlsx
+2026-06-28 20:54:47,091 | INFO | Conexión MySQL OK
+2026-06-28 20:54:47,098 | INFO | Mapeo columna Excel -> MySQL: approved_date -> ApprovedDate
+2026-06-28 20:54:47,098 | INFO | Mapeo columna Excel -> MySQL: approved_by -> ApprovedBy
+2026-06-28 20:54:47,098 | INFO | Mapeo columna Excel -> MySQL: work_request_key -> WorkRequestKey
+2026-06-28 20:54:47,098 | INFO | Mapeo columna Excel -> MySQL: work_request_no -> WorkRequestNo
+2026-06-28 20:54:47,100 | INFO | Mapeo columna Excel -> MySQL: description -> Description
+2026-06-28 20:54:47,100 | INFO | Mapeo columna Excel -> MySQL: note -> Note
+2026-06-28 20:54:47,100 | INFO | Mapeo columna Excel -> MySQL: due_date -> DueDate
+2026-06-28 20:54:47,100 | INFO | Mapeo columna Excel -> MySQL: past_due -> PastDue
+2026-06-28 20:54:47,102 | INFO | Mapeo columna Excel -> MySQL: priority -> Priority
+2026-06-28 20:54:47,102 | INFO | Mapeo columna Excel -> MySQL: equipment_id -> EquipmentID
+2026-06-28 20:54:47,104 | INFO | Mapeo columna Excel -> MySQL: equipment_key -> EquipmentKey
+2026-06-28 20:54:47,104 | INFO | Mapeo columna Excel -> MySQL: work_request_status -> WorkRequestStatus
+2026-06-28 20:54:47,104 | INFO | Mapeo columna Excel -> MySQL: workcenter_code -> WorkcenterCode
+2026-06-28 20:54:47,104 | INFO | Mapeo columna Excel -> MySQL: workcenter_name -> WorkcenterName
+2026-06-28 20:54:47,104 | INFO | Mapeo columna Excel -> MySQL: workcenter_key -> WorkcenterKey
+2026-06-28 20:54:47,106 | INFO | Mapeo columna Excel -> MySQL: requested_by -> RequestedBy
+2026-06-28 20:54:47,106 | INFO | Mapeo columna Excel -> MySQL: assigned_to -> AssignedTo
+2026-06-28 20:54:47,106 | INFO | Mapeo columna Excel -> MySQL: checklist_key -> ChecklistKey
+2026-06-28 20:54:47,106 | INFO | Mapeo columna Excel -> MySQL: request_color -> RequestColor
+2026-06-28 20:54:47,106 | INFO | Mapeo columna Excel -> MySQL: priority_color -> PriorityColor
+2026-06-28 20:54:47,108 | INFO | Mapeo columna Excel -> MySQL: priority_sort_order -> PrioritySortOrder
+2026-06-28 20:54:47,108 | INFO | Mapeo columna Excel -> MySQL: work_request_type_key -> WorkRequestTypeKey
+2026-06-28 20:54:47,108 | INFO | Mapeo columna Excel -> MySQL: work_request_type -> WorkRequestType
+2026-06-28 20:54:47,108 | INFO | Mapeo columna Excel -> MySQL: cancel_reason -> CancelReason
+2026-06-28 20:54:47,108 | INFO | Mapeo columna Excel -> MySQL: cancelled -> Cancelled
+2026-06-28 20:54:47,108 | INFO | Mapeo columna Excel -> MySQL: building_code -> BuildingCode
+2026-06-28 20:54:47,110 | INFO | Mapeo columna Excel -> MySQL: equipment_group -> EquipmentGroup
+2026-06-28 20:54:47,110 | INFO | Mapeo columna Excel -> MySQL: scheduled_hours -> ScheduledHours
+2026-06-28 20:54:47,110 | INFO | Mapeo columna Excel -> MySQL: location -> Location
+2026-06-28 20:54:47,110 | INFO | Mapeo columna Excel -> MySQL: department -> Department
+2026-06-28 20:54:47,112 | INFO | Mapeo columna Excel -> MySQL: complete_date -> CompleteDate
+2026-06-28 20:54:47,112 | INFO | Mapeo columna Excel -> MySQL: duration -> Duration
+2026-06-28 20:54:47,114 | INFO | Mapeo columna Excel -> MySQL: request_date -> RequestDate
+2026-06-28 20:54:47,114 | INFO | Mapeo columna Excel -> MySQL: subsystem -> Subsystem
+2026-06-28 20:54:47,114 | INFO | Mapeo columna Excel -> MySQL: equipment_parts -> EquipmentParts
+2026-06-28 20:54:47,114 | INFO | Mapeo columna Excel -> MySQL: asset_no -> AssetNo
+2026-06-28 20:54:47,114 | INFO | Mapeo columna Excel -> MySQL: asset_no_from_key -> AssetNoFromKey
+2026-06-28 20:54:47,114 | INFO | Mapeo columna Excel -> MySQL: pmschedule_key -> PMScheduleKey
+2026-06-28 20:54:47,114 | INFO | Mapeo columna Excel -> MySQL: pm_schedule_s -> PMSchedules
+2026-06-28 20:54:47,116 | INFO | Unique key automática seleccionada: WorkRequestNo
+2026-06-28 20:54:47,242 | INFO | Lote importado: 500/9727
+2026-06-28 20:54:47,269 | INFO | Lote importado: 1000/9727
+2026-06-28 20:54:47,316 | INFO | Lote importado: 1500/9727
+2026-06-28 20:54:47,365 | INFO | Lote importado: 2000/9727
+2026-06-28 20:54:47,393 | INFO | Lote importado: 2500/9727
+2026-06-28 20:54:47,432 | INFO | Lote importado: 3000/9727
+2026-06-28 20:54:47,461 | INFO | Lote importado: 3500/9727
+2026-06-28 20:54:47,511 | INFO | Lote importado: 4000/9727
+2026-06-28 20:54:47,539 | INFO | Lote importado: 4500/9727
+2026-06-28 20:54:47,570 | INFO | Lote importado: 5000/9727
+2026-06-28 20:54:47,604 | INFO | Lote importado: 5500/9727
+2026-06-28 20:54:47,650 | INFO | Lote importado: 6000/9727
+2026-06-28 20:54:47,680 | INFO | Lote importado: 6500/9727
+2026-06-28 20:54:47,708 | INFO | Lote importado: 7000/9727
+2026-06-28 20:54:47,780 | INFO | Lote importado: 7500/9727
+2026-06-28 20:54:47,917 | INFO | Lote importado: 8000/9727
+2026-06-28 20:54:48,006 | INFO | Lote importado: 8500/9727
+2026-06-28 20:54:48,093 | INFO | Lote importado: 9000/9727
+2026-06-28 20:54:48,164 | INFO | Lote importado: 9500/9727
+2026-06-28 20:54:48,282 | INFO | Lote importado: 9727/9727
